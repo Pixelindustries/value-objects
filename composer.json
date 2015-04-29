@@ -1,0 +1,24 @@
+{
+    "name": "pixelindustries/value-objects",
+    "description": "A collection of value objects to use within your PHP projects.",
+    "require": {
+        "illuminate/validation": "~5.0",
+        "bosnadev/repositories": "0.7.*"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max van der Stam",
+            "email": "max@pixelindustries.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pixelindustries\\ValueObjects\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

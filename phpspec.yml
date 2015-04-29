@@ -1,0 +1,4 @@
+suites:
+    default:
+      namespace: Pixelindustries\ValueObjects
+      psr4_prefix: Pixelindustries\ValueObjects
