@@ -1,8 +1,8 @@
 <?php namespace Pixelindustries\ValueObjects\String;
 
-use Pixelindustries\ValueObjects\Base\I18n;
+use Pixelindustries\ValueObjects\Base\Base;
 
-class IBAN extends I18n {
+class IBAN extends Base {
 
   protected static $validatorNames = ['IBAN'];
 }

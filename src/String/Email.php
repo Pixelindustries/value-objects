@@ -4,7 +4,5 @@ use Pixelindustries\ValueObjects\Base;
 
 class Email extends Base\Base {
 
- public function isValid() {
-  return (filter_var($this->value, FILTER_VALIDATE_EMAIL) !== false);
- }  
+ protected static $validatorNames = ['email'];
 }

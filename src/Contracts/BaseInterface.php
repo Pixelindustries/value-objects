@@ -30,4 +30,10 @@ interface BaseInterface extends JsonSerializable {
    * @return boolean [description]
    */
   public function isValid();
+
+  /**
+   * Returns an array of validators
+   * @return array [description]
+   */
+  public function getValidators();
 }

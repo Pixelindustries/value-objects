@@ -2,6 +2,6 @@
 
 namespace Pixelindustries\ValueObjects\Validators;
 
-class IPv6
+class IPv6 extends BaseValidator
 {
 }

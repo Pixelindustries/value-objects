@@ -4,7 +4,7 @@ namespace Pixelindustries\ValueObjects\Validators\Rules;
 
 use Pixelindustries\ValueObjects\Contracts;
 
-class NotEmpty implements Contracts\ValidatorRuleInterface 
+class NotEmpty extends BaseRule 
 {
   
   public function validate($value) {

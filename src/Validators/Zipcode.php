@@ -2,6 +2,6 @@
 
 namespace Pixelindustries\ValueObjects\Validators;
 
-class Zipcode
+class Zipcode extends BaseValidator
 {
 }

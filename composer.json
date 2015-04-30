@@ -2,8 +2,7 @@
     "name": "pixelindustries/value-objects",
     "description": "A collection of value objects to use within your PHP projects.",
     "require": {
-        "illuminate/validation": "~5.0",
-        "bosnadev/repositories": "0.7.*"
+        "jschaedl/iban": "^1.1"
     },
     "require-dev": {
         "phpspec/phpspec": "~2.2"

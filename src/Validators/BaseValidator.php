@@ -8,6 +8,9 @@ abstract class BaseValidator implements ValidatorInterface {
 
   protected $scope;
 
+  protected static $formatters;
+  protected static $formatterName;
+
   protected static $rules;
   protected static $ruleNames = [];
 
@@ -27,6 +30,16 @@ abstract class BaseValidator implements ValidatorInterface {
 
   public function validate($value) {
     return $this->runThroughValidatorRules($value);
+  }
+
+  public function getRules() {
+    $rules = [];
+
+    foreach(static::$ruleNames as $ruleClassName) {
+      $rules[] = self::$rules->get($ruleClassName, $this->scope);
+    }
+
+    return $rules;
   }
 
   protected function runThroughValidatorRules($value) {

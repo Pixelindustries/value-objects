@@ -2,6 +2,6 @@
 
 namespace Pixelindustries\ValueObjects\Validators;
 
-class SHA265
+class SHA265 extends BaseValidator
 {
 }

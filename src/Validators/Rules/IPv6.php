@@ -4,7 +4,7 @@ namespace Pixelindustries\ValueObjects\Validators\Rules;
 
 use Pixelindustries\ValueObjects\Contracts;
 
-class IPv6 implements Contracts\ValidatorRuleInterface
+class IPv6 extends BaseRule
 {
 
     public function validate($value) {

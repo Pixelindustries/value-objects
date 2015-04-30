@@ -2,10 +2,7 @@
 
 namespace spec\Pixelindustries\ValueObjects\Validators\Rules;
 
-use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
-class IPv6Spec extends ObjectBehavior
+class IPv6Spec extends BaseRuleSpec
 {
     function it_is_initializable()
     {

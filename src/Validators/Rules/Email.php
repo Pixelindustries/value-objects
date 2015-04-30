@@ -2,9 +2,7 @@
 
 namespace Pixelindustries\ValueObjects\Validators\Rules;
 
-use Pixelindustries\ValueObjects\Contracts;
-
-class Email implements Contracts\ValidatorRuleInterface
+class Email extends BaseRule
 {
 
     public function validate($value)

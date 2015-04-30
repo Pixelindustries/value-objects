@@ -8,13 +8,11 @@ class ValidatorRulesRepository {
 
   public function get($className, $scope = null) {
     $className = explode('\\', $className);
-    $className = end($className);
+    $className = ucfirst(end($className));
     $className = "Pixelindustries\\ValueObjects\\Validators\\Rules\\{$className}";
 
     if (!is_null($scope)) {
       $className .= "\\{$scope}";
-    } else {
-      $className .= "\\{$className}";
     }
 
     return new $className;

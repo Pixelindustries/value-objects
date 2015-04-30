@@ -2,6 +2,6 @@
 
 namespace Pixelindustries\ValueObjects\Validators;
 
-class MD5
+class MD5 extends BaseValidator
 {
 }

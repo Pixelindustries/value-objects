@@ -9,4 +9,6 @@ interface ValidatorInterface {
   public function setScope($scope);
 
   public function getScope();
+
+  public function getRules();
 }

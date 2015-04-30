@@ -12,8 +12,17 @@ abstract class BaseSpec extends ObjectBehavior {
       $this->beConstructedWith(null);
   }
 
-  function it_extends_correct_parent_class()
+  function it_implements_correct_parent_interface()
   {
     $this->shouldImplement('Pixelindustries\ValueObjects\Contracts\BaseInterface');
+  }
+
+  function it_runs_through_validators_during_is_valid()
+  {
+    $this->isValid();
+
+    foreach($this->getValidators() as $validator) {
+      $validator->validate($this->value)->shouldHaveBeenCalled();
+    }
   }
 }

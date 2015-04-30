@@ -38,4 +38,14 @@ abstract class I18n implements BaseI18nInterface {
 
     return true;
   }
+
+  public function getValidators() {
+    $validators = [];
+
+    foreach(static::$validatorNames as $validatorClassName) {
+      $validators[] = self::$validators->get($validatorClassName, $this->locale);
+    }
+
+    return $validators;
+  }
 }

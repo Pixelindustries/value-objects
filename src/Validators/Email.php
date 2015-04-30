@@ -2,6 +2,7 @@
 
 namespace Pixelindustries\ValueObjects\Validators;
 
-class Email
+class Email extends BaseValidator
 {
+  protected static $ruleNames = ['email'];
 }

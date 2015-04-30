@@ -2,10 +2,9 @@
 
 namespace spec\Pixelindustries\ValueObjects\Validators;
 
-use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class EmailSpec extends ObjectBehavior
+class EmailSpec extends BaseValidatorSpec
 {
     function it_is_initializable()
     {

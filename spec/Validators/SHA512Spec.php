@@ -2,10 +2,9 @@
 
 namespace spec\Pixelindustries\ValueObjects\Validators;
 
-use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class SHA512Spec extends ObjectBehavior
+class SHA512Spec extends BaseValidatorSpec
 {
     function it_is_initializable()
     {

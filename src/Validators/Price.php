@@ -2,6 +2,6 @@
 
 namespace Pixelindustries\ValueObjects\Validators;
 
-class Price
+class Price extends BaseValidator
 {
 }
